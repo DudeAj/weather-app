@@ -15,7 +15,7 @@ const App = () => {
   const [unit, setUnit] = useState("metric");
   const [error, setError] = useState(null);
 
-  useEffect(() => {ß
+  useEffect(() => {
     fetchWeather(city);
     fetchForecast(city);
   }, [city, unit]);
