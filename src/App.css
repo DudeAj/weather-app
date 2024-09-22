@@ -1,0 +1,75 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.app-handler {
+  background-color: #00000050;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+.app-data-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.error {
+  /* color: red; */
+
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.error img {
+  width: 100px;
+  height: 100px;
+}
+
+.error h1 {
+  font-size: 4rem;
+
+  font-weight: 700;
+}
+
+.error-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+  .forecast-container {
+    padding: 10px;
+    display: block;
+    flex-direction: column;
+  }
+  .app-data-container {
+    display: block;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
